@@ -54,5 +54,51 @@
         </div>
     </div>    
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      const textElement = document.getElementById("changing-text");
+      const buttons = document.querySelectorAll(".icon-button");
+
+      const originalText = "DESCUBRE UNA SENSACION<br><span class='highlight' style='color: #c2ffa6;'>ALTERNATIVA</span><br>QUE CAMBIARA TU RUTINA"; // Texto original
+
+      // Opciones de texto y colores
+      const textOptions = {
+          "button1": { word: "VITALMENTE", bgcolor: "#f8c5ff", highlightColor: "#e5acff"},   
+          "button2": { word: "REFRESCANTE", bgcolor: "#c5fbff", highlightColor: "#adfcff"}, 
+          "button3": { word: "ENERGÉTICA", bgcolor: "#ffc5c5", highlightColor: "#ff9e9e" }  
+      };
+
+      let activeButton = null;
+
+      buttons.forEach(button => {
+          button.addEventListener("click", function () {
+              if (activeButton === this) {
+                  // Si el mismo botón se presiona, se desactiva
+                  textElement.innerHTML = originalText;
+                  this.classList.remove("active");
+                  this.style.backgroundColor = "";
+                  activeButton = null;
+              } else {
+                  // Si es un nuevo botón, cambiar el texto y resaltar con color
+                  const { word, bgcolor, highlightColor } = textOptions[this.id];
+
+                  // Si es un nuevo botón, cambiar texto y resaltar el botón
+                  textElement.innerHTML = `DESCUBRE UNA SENSACION<br><span class='highlight' style="color: ${highlightColor};">${word}</span><br>QUE CAMBIARA TU RUTINA`;
+
+                  // Resetear botones y aplicar nuevo color
+                  buttons.forEach(btn => {
+                      btn.classList.remove("active");
+                      btn.style.backgroundColor = "";
+                  });
+
+                  this.classList.add("active");
+                  this.style.backgroundColor = textOptions[this.id].bgcolor;
+                  activeButton = this;
+              }
+          });
+        });
+      });
+    </script>
 </body>
 </html>
