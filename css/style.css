@@ -2,199 +2,206 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
+
+  /* Estilos para el encabezado */
   header {
-    position: absolute; /* Fijado */
-    top: 35px; /* Espacio Superior */
-
-    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-    backdrop-filter: blur(30px); /* Efecto de desenfoque */
-
-    width: 1190px; /* Anchura */
-    padding: 15px 40px; /* Espaciado */
-
-    border-radius: 20px; /* Bordes redondeados */
-
-    left: 50%; /* Mueve el header a la mitad de la pantalla */
-    transform: translateX(-50%); /* Lo desplaza hacia atrás la mitad de su ancho */
+    position: absolute; /* Fijado en una posición absoluta respecto al contenedor */
+    top: 35px; /* Espaciado superior de 35px */
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque al fondo */
+    border: 1px solid rgb(138, 138, 138); /* Borde de color gris */
+    width: 1190px; /* Ancho del encabezado */
+    padding: 15px 40px; /* Espaciado interno: 15px arriba/abajo y 40px a los lados */
+    border-radius: 20px; /* Bordes redondeados de 20px */
+    left: 50%; /* Posiciona el header en la mitad horizontal de la pantalla */
+    transform: translateX(-50%); /* Centra el header al moverlo hacia atrás la mitad de su ancho */
   }
   
   /* Contenedor de navegación */
   .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    display: flex; /* Activa flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Distribuye los elementos con el mismo espacio entre ellos */
+    width: 100%; /* Ocupa todo el ancho disponible */
   }
   
-  /* Enlaces de navegación */
+  /* Lista de enlaces de navegación */
   .nav-links {
-    display: flex;
-    gap: 14px;
-    list-style: none;
+    display: flex; /* Los elementos se alinean en fila */
+    gap: 14px; /* Espaciado entre elementos de la lista */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
     padding: 0;
     margin: 0;
-    transform: scaleY(1.2);
+    transform: scaleY(1.2); /* Escala los elementos en el eje Y */
   }
   
+  /* Estilos para los enlaces dentro de la lista de navegación */
   .nav-links a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 19px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    transition: ease 0.2s;
-    letter-spacing: -0.5px;
+    text-decoration: none; /* Elimina el subrayado */
+    color: rgb(255, 255, 255); /* Color blanco para los enlaces */
+    font-size: 19px; /* Tamaño de fuente */
+    font-family: "Barlow Condensed", sans-serif; /* Tipo de fuente */
+    font-weight: 600; /* Peso de la fuente */
+    font-style: normal; /* Estilo normal */
+    transition: ease 0.2s; /* Suaviza la transición de cambios */
+    letter-spacing: -0.5px; /* Espaciado entre letras */
   }
 
+  /* Estilos para los elementos de lista */
   .nav-links li {
-    color: rgba(255, 255, 255, 0.397);
+    color: rgba(255, 255, 255, 0.397); /* Color con transparencia */
     font-size: 19px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
+  /* Cambio de color en el hover de los enlaces */
   .nav-links a:hover {
     color: rgb(226, 226, 226);
   }
   
-  /* Nombre/logo en el centro */
+  /* Estilos para el logo */
   .logo-name {
-    transform: scaleY(1.1);
-    font-size: 24px;
-    font-family: "Boldonse", system-ui;
+    transform: scaleY(1.1); /* Escala en el eje Y */
+    font-size: 24px; /* Tamaño del texto */
+    font-family: "Boldonse", system-ui; /* Fuente personalizada */
     font-weight: 400;
     font-style: normal;
-    color: white;
-    text-transform: uppercase;
+    color: white; /* Color del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
   }
   
-  /* Botón de compra */
+  /* Botón de compra ahora */
   .button-buy-now {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 5px 5px 5px 12px;
-    border-radius: 10px;
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra los elementos verticalmente */
+    background: white; /* Fondo blanco */
+    padding: 5px 5px 5px 12px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
   }
 
+  /* Botón CTA (Call To Action) */
   .btn-cta {
-    color: rgb(57, 202, 41);
+    color: rgb(57, 202, 41); /* Color verde */
     font-family: "Barlow Condensed", sans-serif;
-    font-weight: 800;
+    font-weight: 800; /* Negrita */
     font-style: normal;
     font-size: 20px;
-    text-decoration: none;
-    margin-right: 15px;
-    transform: scaleY(1.2);
-    letter-spacing: -0.2px;
-    transition: ease 0.3s;
+    text-decoration: none; /* Sin subrayado */
+    margin-right: 15px; /* Margen derecho */
+    transform: scaleY(1.2); /* Escala en el eje Y */
+    letter-spacing: -0.2px; /* Espaciado entre letras */
+    transition: ease 0.3s; /* Transición suave */
   }
 
+  /* Cambio de color en hover del botón CTA */
   .btn-cta:hover {
-    color: rgb(48, 163, 36);
+    color: rgb(48, 163, 36); /* Cambio a un tono más oscuro de verde */
   }
 
+  /* Ícono dentro del botón de compra */
   .icon-buy-now {
-    background: rgb(5, 233, 16);
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-
+    background: rgb(5, 233, 16); /* Fondo verde */
+    width: 45px; /* Ancho del ícono */
+    height: 45px; /* Alto del ícono */
+    border-radius: 10px; /* Bordes redondeados */
     display: flex; /* Activa flexbox */
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
   }
   
+  /* Estilos para la imagen dentro del icono de compra */
   .icon-buy-now img {
-    width: 25px;
-    height: 25px;
+    width: 25px; /* Ancho de la imagen */
+    height: 25px; /* Alto de la imagen */
   }
 
+  /* Sección principal de la página */
   .home {
-    flex-direction: column;
-    align-items: center;
-
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    display: flex; /* Activa flexbox */
+    text-align: center; /* Alineación de texto centrada */
+    justify-content: space-between; /* Distribuye los elementos con el mismo espacio entre ellos */
     width: 90%; /* Usa un porcentaje para que sea más adaptable */
-    max-width: 1300px; /* Límite máximo */
+    max-width: 1300px; /* Límite máximo de ancho */
     height: 90vh; /* 90% de la altura de la pantalla */
-
-    margin: 0 auto; /* Centrado */
-    margin-top: 20px;
-
-    background-image: url('https://i.ibb.co/vxKHSPHD/img-inicio.png');  /* Imagen*/
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 20px; /* Margen superior */
+    background-image: url('https://i.ibb.co/vxKHSPHD/img-inicio.png'); /* Imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-
     border-radius: 20px; /* Bordes redondeados */
   }
   
+  /* Caja interactiva */
   .interactive-box {
-    margin-top: 250px;
-    margin-left: 990px;
-    width: 200px;
-    padding: 10px;
-    text-align: right;
-    justify-items: right;
+    margin-top: 250px; /* Espaciado superior */
+    margin-left: 990px; /* Desplazamiento lateral */
+    width: 200px; /* Ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    text-align: right; /* Alineación del texto */
+    justify-items: right; /* Alineación de elementos */
   }
 
+  /* Contenedor de iconos */
   .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(192, 192, 192);
-    padding: 5px;
-    width: 160px;
-    border-radius: 45px;
-
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    gap: 4px; /* Espacio entre los iconos */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid rgb(192, 192, 192); /* Borde gris */
+    padding: 5px; /* Espaciado interno */
+    width: 160px; /* Ancho del contenedor */
+    border-radius: 45px; /* Bordes redondeados */
     background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-    backdrop-filter: blur(30px); /* Efecto de desenfoque */
+    backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque */
   }
 
+  /* Botones de iconos */
   .icon-button {
-    background: white;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: white; /* Fondo blanco */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular */
+    width: 45px; /* Ancho del botón */
+    height: 45px; /* Alto del botón */
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
   }
 
+  /* Estilo para elementos activos */
   .active {
-    font-weight: bold;
+    font-weight: bold; /* Texto en negrita */
   }
 
+  /* Imágenes dentro de los botones de iconos */
   .icon-button img {
-    width: 26px;
-    height: 26px;
+    width: 26px; /* Ancho de la imagen */
+    height: 26px; /* Alto de la imagen */
   }
 
+  /* Contenedor de texto */
   .text-container {
-    transform: scaleY(1.2);
+    transform: scaleY(1.2); /* Escala el texto en el eje Y */
   }
 
+  /* Estilos para los párrafos dentro del contenedor de texto */
   .text-container p {
-    color: rgb(231, 231, 231);
-    font-size: 18px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 600;
+    color: rgb(231, 231, 231); /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    font-family: "Barlow Condensed", sans-serif; /* Fuente personalizada */
+    font-weight: 600; /* Peso de la fuente */
   }
 
+  /* Estilo para los textos destacados */
   .highlight {
-    font-size: 27px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 27px; /* Tamaño más grande */
+    font-weight: 700; /* Texto en negrita */
+    letter-spacing: 2px; /* Espaciado entre letras */
   }

@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>RELAX</title>
 </head>
 <body>
     <header>
@@ -54,44 +52,50 @@
         </div>
     </div>    
     </section>
-
+    <!-- Modal -->
+    <div id="modal" class="modal hide">
+      <div class="modal-content">
+        <div class="modal-titule">
+          <h2>INGRESA TUS DATOS</h2>
+        </div>
+        <div class="inputs">
+          <input type="text" id="nombre" placeholder="Tu nombre" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+        <input type="tel" id="telefono" placeholder="Tu teléfono" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+        </div>
+        <div class="error-container">
+          <p id="errorMensaje" class="error-text"></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btns" id="close">CERRAR</button>
+          <button class="btnsd" id="enviarBtn">ENVIAR</button>
+        </div>
+      </div>
+    </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
       const textElement = document.getElementById("changing-text");
       const buttons = document.querySelectorAll(".icon-button");
-
       const originalText = "DESCUBRE UNA SENSACION<br><span class='highlight' style='color: #c2ffa6;'>ALTERNATIVA</span><br>QUE CAMBIARA TU RUTINA"; // Texto original
-
-      // Opciones de texto y colores
       const textOptions = {
           "button1": { word: "VITALMENTE", bgcolor: "#f8c5ff", highlightColor: "#e5acff"},   
           "button2": { word: "REFRESCANTE", bgcolor: "#c5fbff", highlightColor: "#adfcff"}, 
           "button3": { word: "ENERGÉTICA", bgcolor: "#ffc5c5", highlightColor: "#ff9e9e" }  
       };
-
       let activeButton = null;
-
       buttons.forEach(button => {
           button.addEventListener("click", function () {
               if (activeButton === this) {
-                  // Si el mismo botón se presiona, se desactiva
                   textElement.innerHTML = originalText;
                   this.classList.remove("active");
                   this.style.backgroundColor = "";
                   activeButton = null;
               } else {
-                  // Si es un nuevo botón, cambiar el texto y resaltar con color
                   const { word, bgcolor, highlightColor } = textOptions[this.id];
-
-                  // Si es un nuevo botón, cambiar texto y resaltar el botón
                   textElement.innerHTML = `DESCUBRE UNA SENSACION<br><span class='highlight' style="color: ${highlightColor};">${word}</span><br>QUE CAMBIARA TU RUTINA`;
-
-                  // Resetear botones y aplicar nuevo color
                   buttons.forEach(btn => {
                       btn.classList.remove("active");
                       btn.style.backgroundColor = "";
                   });
-
                   this.classList.add("active");
                   this.style.backgroundColor = textOptions[this.id].bgcolor;
                   activeButton = this;
