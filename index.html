@@ -104,5 +104,45 @@
         });
       });
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("modal");
+      const btn = document.querySelector(".btn-cta");
+      const closeBtn = document.getElementById("close");
+      const enviarBtn = document.getElementById("enviarBtn");
+      const nombreInput = document.getElementById("nombre");
+      const telefonoInput = document.getElementById("telefono");
+      const errorMensaje = document.getElementById("errorMensaje");
+      modal.classList.remove("show");
+      modal.classList.add("hide");
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        modal.classList.remove("hide");
+        modal.classList.add("show");
+        errorMensaje.style.display = "none"; 
+      });
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("show");
+        modal.classList.add("hide");
+      });
+      enviarBtn.addEventListener("click", () => {
+        const nombre = nombreInput.value.trim();
+        const telefono = telefonoInput.value.trim();
+        if (nombre === "" || telefono === "") {
+          errorMensaje.textContent = "Por favor, ingresa tu nombre y teléfono.";
+          errorMensaje.style.display = "block";
+          return;
+        }
+        const mensaje = `Hola me llamo ${nombre}, me comunico desde el teléfono ${telefono}, y me gustaría comprar el producto RELAX!!!`;
+        const whatsappUrl = `https://wa.me/923634894?text=${encodeURIComponent(mensaje)}`;
+        window.open(whatsappUrl, "_blank");
+        nombreInput.value = "";
+        telefonoInput.value = "";
+        errorMensaje.style.display = "none";
+        modal.classList.remove("show");
+        modal.classList.add("hide");
+      });
+    });
+    </script>
 </body>
 </html>
