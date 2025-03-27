@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: absolute; /* Fijado */
+    top: 35px; /* Espacio Superior */
+
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(30px); /* Efecto de desenfoque */
+
+    width: 1190px; /* Anchura */
+    padding: 15px 40px; /* Espaciado */
+
+    border-radius: 20px; /* Bordes redondeados */
+
+    left: 50%; /* Mueve el header a la mitad de la pantalla */
+    transform: translateX(-50%); /* Lo desplaza hacia atrás la mitad de su ancho */
+  }
+  
+  /* Contenedor de navegación */
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Enlaces de navegación */
+  .nav-links {
+    display: flex;
+    gap: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: scaleY(1.2);
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: ease 0.2s;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-links li {
+    color: rgba(255, 255, 255, 0.397);
+    font-size: 19px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(226, 226, 226);
+  }
+  
+  /* Nombre/logo en el centro */
+  .logo-name {
+    transform: scaleY(1.1);
+    font-size: 24px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Botón de compra */
+  .button-buy-now {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 5px 5px 12px;
+    border-radius: 10px;
+  }
+
+  .btn-cta {
+    color: rgb(57, 202, 41);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    transform: scaleY(1.2);
+    letter-spacing: -0.2px;
+    transition: ease 0.3s;
+  }
+
+  .btn-cta:hover {
+    color: rgb(48, 163, 36);
+  }
+
+  .icon-buy-now {
+    background: rgb(5, 233, 16);
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .icon-buy-now img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    width: 90%; /* Usa un porcentaje para que sea más adaptable */
+    max-width: 1300px; /* Límite máximo */
+    height: 90vh; /* 90% de la altura de la pantalla */
+
+    margin: 0 auto; /* Centrado */
+    margin-top: 20px;
+
+    background-image: url('https://i.ibb.co/vxKHSPHD/img-inicio.png');  /* Imagen*/
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+    border-radius: 20px; /* Bordes redondeados */
+  }
