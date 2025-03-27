@@ -205,3 +205,150 @@ body {
     font-weight: 700; /* Texto en negrita */
     letter-spacing: 2px; /* Espaciado entre letras */
   }
+
+  /* Modal oculto inicialmente */
+  .modal {
+    opacity: 0; /* Inicia invisible */
+    visibility: hidden; /* Oculta la visibilidad */
+    position: fixed; /* Fija el modal en la pantalla */
+    z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Suaviza la transición */
+  }
+
+  /* Contenedor del contenido del modal */
+  .modal-content {
+    background: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 315px;
+    text-align: center;
+    position: relative;
+    transform: scale(0.8); /* Reduce el tamaño al inicio */
+    transition: transform 0.2s ease; /* Suaviza el crecimiento */
+    height: 305px;
+  }
+
+  /* Título del modal */
+  .modal-titule {
+    margin-top: -15px; /* Ajuste de margen superior */
+  }
+
+  .modal-titule h2 {
+    color: rgb(57, 202, 41); /* Verde */
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 37px;
+  }
+
+  /* Mostrar modal con animación */
+  .modal.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal.show .modal-content {
+    transform: scale(1); /* Crecimiento suave */
+  }
+
+  /* Ocultar modal con animación */
+  .modal.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .modal.hide .modal-content {
+    transform: scale(0.9); /* Se reduce antes de ocultarse */
+  }
+
+  input {
+    width: 245px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none; /* Quita el borde negro al hacer clic */
+    border: 2px solid #ccc; /* Borde normal */
+    transition: border-color 0.3s ease; /* Suaviza el cambio de color del borde */
+  }
+
+  /* Cambio de borde al seleccionar */
+  input:focus {
+    border: 2px solid rgb(57, 202, 41); /* Verde */
+  }
+
+  /* Ajuste de margen superior para los inputs */
+  .inputs {
+    margin-top: -12px;
+  }
+
+  /* Contenedor del pie del modal (botones) */
+  .modal-footer {
+    margin-top: 25px; /* Espacio entre los inputs y los botones */
+  }
+
+  /* Botón de cerrar (gris) */
+  .btns {
+    background-color: rgb(109, 109, 109);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: ease 0.2s;
+  }
+
+  /* Botón de enviar (verde, estilo WhatsApp) */
+  .btnsd {
+    background-color: rgb(60, 212, 44);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px;
+    transition: ease 0.2s;
+  }
+
+  /* Efecto hover para los botones */
+  .btns:hover {
+    background-color: rgb(77, 77, 77); /* Oscurece el botón de cerrar */
+  }
+
+  .btnsd:hover {
+    background-color: rgb(44, 179, 29); /* Oscurece el botón de enviar */
+  }
+
+  /* Contenedor para el mensaje de error */
+  .error-container {
+    height: 20px; /* Fija la altura para evitar movimiento de botones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilo del mensaje de error */
+  .error-text {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    display: none; /* Oculto por defecto */
+  }
