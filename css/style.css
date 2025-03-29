@@ -353,3 +353,91 @@ body {
     text-align: center;
     display: none; /* Oculto por defecto */
   }
+
+  
+  .choose-our {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 25px; /* Margen superior */
+    max-width: 1220px; /* Límite máximo de ancho */
+    align-items: center;
+    padding: 40px;
+
+  }
+
+  .choose-our-texto {
+    display: flex;
+    text-align: left;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400; /* Negrita */
+    font-style: normal;
+    font-size: 25px;
+    margin-top: -105px;
+    color: #464646;
+    transform: scaleY(1.2); /* Escala en el eje Y */
+    letter-spacing: -0.2px; /* Espaciado entre letras */
+  }
+
+  .choose-our-texto strong{
+    color: #111111;
+    font-weight: 800; /* Negrita */
+    letter-spacing: 1px; /* Espaciado entre letras */
+  }
+
+  .choose-our-info {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    width: 490px;
+    margin-left: 100px;
+  }
+
+  .choose-our-info-extra {
+    display: flex; /* Activa flexbox */
+    justify-content: center;
+    align-items: center; /* Centra los elementos verticalmente */
+    background: #7344ae; /* Fondo blanco */
+    padding: 2px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 220px;
+    height: 48px;
+    transform: scaleY(1.2); /* Escala en el eje Y */
+    letter-spacing: 1px; /* Espaciado entre letras */
+  }
+
+  .choose-our-info-extra-2 {
+    transform: scaleY(1.2); /* Escala en el eje Y */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+  }
+
+  .choose-our-info-extra h4{
+    margin-top: 48px;
+    color: rgb(255, 255, 255);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 41px;
+  }
+
+  .choose-our-info-extra-2 h2 {
+    color: rgb(24, 24, 24);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 30px;
+    line-height: 1;
+  }
+
+  .choose-our-extra {
+    display: flex;
+    text-align: center;
+  }
+
+  .choose-our-extra-img {
+    margin-top: -25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+  }
