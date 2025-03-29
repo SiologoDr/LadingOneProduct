@@ -70,6 +70,7 @@ body {
     font-style: normal;
     color: white; /* Color del texto */
     text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-right: 65px;
   }
   
   /* Botón de compra ahora */
