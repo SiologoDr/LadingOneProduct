@@ -116,6 +116,7 @@ body {
   .icon-buy-now img {
     width: 25px; /* Ancho de la imagen */
     height: 25px; /* Alto de la imagen */
+    transition: transform 0.2s ease-in-out;
   }
 
   /* Sección principal de la página */
@@ -185,6 +186,7 @@ body {
   .icon-button img {
     width: 26px; /* Ancho de la imagen */
     height: 26px; /* Alto de la imagen */
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
   }
 
   /* Contenedor de texto */
@@ -434,10 +436,24 @@ body {
     text-align: center;
   }
 
+  .icon-button img:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    filter: brightness(1.1);
+  }
+
+  .icon-buy-now img:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+  }
+  
   .choose-our-extra-img {
+    transition: transform 0.2s ease-in-out;
     margin-top: -25px;
     border-radius: 10px;
     width: 100%;
     max-width: 290px;
     height: auto;
+  }
+
+  .choose-our-extra-img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
   }
