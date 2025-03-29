@@ -457,3 +457,86 @@ body {
   .choose-our-extra-img:hover {
     transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
   }
+
+  .product-our {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme */
+    gap: 0px; /* Espacio entre productos */
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: -30px; /* Margen superior */
+    max-width: 1340px; /* Límite máximo de ancho */
+  }
+  
+  .product-individual {
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center;
+    width: 40%; /* Para que tres productos entren en una fila */
+    height: 500px;
+  }
+  
+  .product-individual-img {
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta según la imagen */
+    width: 100%;
+  }
+
+  .product-individual-img:hover {
+    transform: scale(1.04); /* Efecto de aumento al pasar el mouse */
+    filter: brightness(1.1);
+  }
+
+  .product-img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 380px; /* Límite máximo de ancho */
+    margin-top: 10px;
+  }
+
+  .product-precio-nombre h4 {
+    color: rgb(24, 24, 24);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+  }
+  
+  .product-precio-dinero1 h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    color: #9370DB; /* Color morado */
+  }
+  
+  .product-precio-dinero2 h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    color: #DC143C; /* Color rojo */
+  }
+  
+  .product-precio-dinero3 h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    color: #FF7F50; /* Color naranja */
+  }
