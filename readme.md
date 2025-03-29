@@ -60,14 +60,14 @@ No todas las imagenes han sido extraidas de Internet, sino que han sido desarrol
 ---
 
 📌 **Estado Actual:**
-✔ Implementación de estructura HTML y diseño con CSS.
-✔ Botón de contacto que redirige a WhatsApp.
-✔ Animaciones de entrada con AOS.js.
+- ✔ Implementación de estructura HTML y diseño con CSS.
+- ✔ Botón de contacto que redirige a WhatsApp.
+- ✔ Animaciones de entrada con AOS.js.
 
 🚧 **Próximamente:**
-🔹 Implementar pasarela de pago con API.
-🔹 Mejorar el diseño responsive.
-🔹 Optimización del código y mejora de rendimiento.
+- 🔹 Implementar pasarela de pago con API.
+- 🔹 Mejorar el diseño responsive.
+- 🔹 Optimización del código y mejora de rendimiento.
 
 ---
 
