@@ -42,10 +42,13 @@ El objetivo principal es desarrollar una página web con una **experiencia de us
 
 ## 📦 Estructura del Proyecto "RELAX"
 
+```
+Relax/
 ├── 📂 css
 │ ├── 🎨 style.css
 ├── 📄 index.html
 ├── 📜 readme.md
+```
 
 ---
 
@@ -72,25 +75,25 @@ No todas las imagenes han sido extraidas de Internet, sino que han sido desarrol
 
 ## Inicio
 
-![Vista previa](https://i.ibb.co/0pStmGvY/1.png)
+![Vista1](https://i.ibb.co/0pStmGvY/1.png)
 
 ---
 
 ## Productos
 
-![Vista previa](https://i.ibb.co/xSYWvs3H/2.png)
+![Vista2](https://i.ibb.co/xSYWvs3H/2.png)
 
 ---
 
 ## Ofertas
 
-![Vista previa](https://i.ibb.co/TxnycHDZ/3.png)
+![Vista3](https://i.ibb.co/TxnycHDZ/3.png)
 
 ---
 
 ## Modal
 
-![Vista previa](https://i.ibb.co/jPZ8yfNY/4.png)
+![Vista4](https://i.ibb.co/jPZ8yfNY/4.png)
 
 ---
 
