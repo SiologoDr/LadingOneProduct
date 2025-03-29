@@ -55,7 +55,7 @@ Relax/
 ## 📍 Imagenes del Proyecto
 No todas las imagenes han sido extraidas de Internet, sino que han sido desarrolladas por el autor
 
-![Evidencia](https://i.ibb.co/jZRDC5Bg/image.png)
+![Evidencia](https://i.postimg.cc/T34QGwgR/01.png)
 
 ---
 
@@ -75,25 +75,25 @@ No todas las imagenes han sido extraidas de Internet, sino que han sido desarrol
 
 ## Inicio
 
-![Vista1](https://i.ibb.co/0pStmGvY/1.png)
+![Vista1](https://i.postimg.cc/V6yRrVKp/10.png)
 
 ---
 
 ## Productos
 
-![Vista2](https://i.ibb.co/xSYWvs3H/2.png)
+![Vista2](https://i.postimg.cc/3w01wTF2/20.png)
 
 ---
 
 ## Ofertas
 
-![Vista3](https://i.ibb.co/TxnycHDZ/3.png)
+![Vista3](https://i.postimg.cc/ZRrLrxgR/30.png)
 
 ---
 
 ## Modal
 
-![Vista4](https://i.ibb.co/jPZ8yfNY/4.png)
+![Vista4](https://i.postimg.cc/DwZ5tsW-j/40.png)
 
 ---
 
