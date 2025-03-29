@@ -71,6 +71,7 @@ body {
     color: white; /* Color del texto */
     text-transform: uppercase; /* Convierte el texto a mayúsculas */
     margin-right: 65px;
+    cursor: default;
   }
   
   /* Botón de compra ahora */
@@ -200,6 +201,7 @@ body {
     font-size: 18px; /* Tamaño de fuente */
     font-family: "Barlow Condensed", sans-serif; /* Fuente personalizada */
     font-weight: 600; /* Peso de la fuente */
+    cursor: default;
   }
 
   /* Estilo para los textos destacados */
@@ -207,6 +209,7 @@ body {
     font-size: 27px; /* Tamaño más grande */
     font-weight: 700; /* Texto en negrita */
     letter-spacing: 2px; /* Espaciado entre letras */
+    cursor: default;
   }
 
   /* Modal oculto inicialmente */
@@ -250,6 +253,7 @@ body {
     font-weight: 800; /* Negrita */
     font-style: normal;
     font-size: 37px;
+    cursor: default;
   }
 
   /* Mostrar modal con animación */
@@ -354,6 +358,7 @@ body {
     font-size: 14px;
     text-align: center;
     display: none; /* Oculto por defecto */
+    cursor: default;
   }
 
   
@@ -379,6 +384,7 @@ body {
     color: #464646;
     transform: scaleY(1.2); /* Escala en el eje Y */
     letter-spacing: -0.2px; /* Espaciado entre letras */
+    cursor: default;
   }
 
   .choose-our-texto strong{
@@ -419,6 +425,7 @@ body {
     font-weight: 800; /* Negrita */
     font-style: normal;
     font-size: 41px;
+    cursor: default;
   }
 
   .choose-our-info-extra-2 h2 {
@@ -429,6 +436,7 @@ body {
     font-size: 40px;
     margin-top: 30px;
     line-height: 1;
+    cursor: default;
   }
 
   .choose-our-extra {
@@ -503,6 +511,7 @@ body {
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     max-width: 380px; /* Límite máximo de ancho */
     margin-top: 10px;
+    cursor: default;
   }
 
   .product-precio-nombre h4 {
@@ -539,4 +548,90 @@ body {
     font-size: 30px;
     line-height: 1;
     color: #FF7F50; /* Color naranja */
+  }
+
+  .medio {
+    flex-direction: row; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    display: flex; /* Activa flexbox */
+    text-align: center; /* Alineación de texto centrada */
+    justify-content: space-between; /* Distribuye los elementos con el mismo espacio entre ellos */
+    width: 90%; /* Usa un porcentaje para que sea más adaptable */
+    max-width: 1300px; /* Límite máximo de ancho */
+    height: 90vh; /* 90% de la altura de la pantalla */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 105px; /* Margen superior */
+    background-image: url('https://i.ibb.co/f3wDNf5/medio.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    border-radius: 20px; /* Bordes redondeados */
+    margin-bottom: 60px;
+  }
+
+  .medio-info {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      margin: 0 auto; /* Centra el contenedor horizontalmente */
+      margin-top: 700px;
+  }
+
+  .medio-porcentaje {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 50px;
+      padding: 10px 10px;
+      min-width: 250px;
+      height: 80px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgb(192, 192, 192); /* Borde gris */
+      border-radius: 45px; /* Bordes redondeados */
+      background: rgba(0, 0, 0, 0.514); /* Fondo semitransparente */
+      backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque */
+      transition: transform ease 0.2s;
+      cursor: default;
+  }
+
+  .medio-porcentaje:hover{
+    transform: scale(1.02);
+  }
+
+  .medio-porcentaje-titulo h4 {
+      color: white;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 800; 
+      font-style: normal;
+      font-size: 47px;
+      line-height: 1;
+      margin-left: 20px;
+  }
+
+  .medio-porcentaje-circulo {
+      width: 80px;
+      height: 80px;
+      background-color: #ff0011; 
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      margin-left: 20px;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 1;
+  }
+
+  .medio-porcentaje:nth-child(2) .medio-porcentaje-circulo {
+      background-color: #7242b4;
+  }
+
+  .medio-porcentaje:nth-child(3) .medio-porcentaje-circulo {
+      background-color: #ff7818;
   }
