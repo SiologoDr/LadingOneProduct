@@ -490,6 +490,7 @@ body {
     align-items: center;
     height: 100%; /* Ajusta según la imagen */
     width: 100%;
+    transform: scale(1);
   }
 
   .product-individual-img:hover {
@@ -593,8 +594,9 @@ body {
       border-radius: 45px; /* Bordes redondeados */
       background: rgba(0, 0, 0, 0.514); /* Fondo semitransparente */
       backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque */
-      transition: transform ease 0.2s;
+      transition: ease 0.2s;
       cursor: default;
+      transform: scale(1)
   }
 
   .medio-porcentaje:hover{
