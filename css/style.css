@@ -654,6 +654,13 @@ body {
     margin-top: -90px;
     width: 700px;
   }
+
+  .separador {
+    border-bottom: 1px solid #d3d3d3; 
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: -60px;
+  }
   
   .experiencia-texto-titulo h4 {
     background: #6A42CF;
