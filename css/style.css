@@ -7,9 +7,8 @@ body {
   header {
     position: absolute; /* Fijado en una posición absoluta respecto al contenedor */
     top: 35px; /* Espaciado superior de 35px */
-    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
-    backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque al fondo */
-    border: 1px solid rgb(138, 138, 138); /* Borde de color gris */
+    background: rgba(0, 0, 0, 0.507); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(2px); /* Aplica un efecto de desenfoque al fondo */
     width: 1190px; /* Ancho del encabezado */
     padding: 15px 40px; /* Espaciado interno: 15px arriba/abajo y 40px a los lados */
     border-radius: 20px; /* Bordes redondeados de 20px */
@@ -44,7 +43,8 @@ body {
     font-weight: 600; /* Peso de la fuente */
     font-style: normal; /* Estilo normal */
     transition: ease 0.2s; /* Suaviza la transición de cambios */
-    letter-spacing: -0.5px; /* Espaciado entre letras */
+    letter-spacing: -0.2px; /* Espaciado entre letras */
+    text-shadow: 0px 0px 2px rgba(66, 66, 66, 0.6);
   }
 
   /* Estilos para los elementos de lista */
@@ -58,7 +58,8 @@ body {
   
   /* Cambio de color en el hover de los enlaces */
   .nav-links a:hover {
-    color: rgb(226, 226, 226);
+    color: rgb(181, 255, 255);
+    text-shadow: 0px 0px 2px rgba(0, 71, 73, 0.6);
   }
   
   /* Estilos para el logo */
@@ -72,6 +73,7 @@ body {
     text-transform: uppercase; /* Convierte el texto a mayúsculas */
     margin-right: 65px;
     cursor: default;
+    text-shadow: 0px 0px 5px rgba(109, 109, 109, 0.6);
   }
   
   /* Botón de compra ahora */
@@ -132,7 +134,7 @@ body {
     height: 90vh; /* 90% de la altura de la pantalla */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     margin-top: 20px; /* Margen superior */
-    background-image: url('https://i.ibb.co/vxKHSPHD/img-inicio.png'); /* Imagen de fondo */
+    background-image: url('https://i.ibb.co/Jj6brFC4/inicio2.png'); /* Imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -156,12 +158,11 @@ body {
     align-items: center; /* Centra los iconos verticalmente */
     gap: 4px; /* Espacio entre los iconos */
     margin-bottom: 10px; /* Margen inferior */
-    border: 1px solid rgb(192, 192, 192); /* Borde gris */
-    padding: 5px; /* Espaciado interno */
+    padding: 5px 0px; /* Espaciado interno */
     width: 160px; /* Ancho del contenedor */
     border-radius: 45px; /* Bordes redondeados */
-    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-    backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque */
+    background: rgba(0, 0, 0, 0.301); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(2px); /* Aplica un efecto de desenfoque */
   }
 
   /* Botones de iconos */
@@ -202,6 +203,7 @@ body {
     font-family: "Barlow Condensed", sans-serif; /* Fuente personalizada */
     font-weight: 600; /* Peso de la fuente */
     cursor: default;
+    text-shadow: 0px 0px 5px rgba(53, 53, 53, 0.6);
   }
 
   /* Estilo para los textos destacados */
@@ -210,6 +212,7 @@ body {
     font-weight: 700; /* Texto en negrita */
     letter-spacing: 2px; /* Espaciado entre letras */
     cursor: default;
+    text-shadow: 0px 0px 5px rgba(53, 53, 53, 0.6);
   }
 
   /* Modal oculto inicialmente */
@@ -388,7 +391,7 @@ body {
   }
 
   .choose-our-texto strong{
-    color: #111111;
+    color: #05b8ff;
     font-weight: 800; /* Negrita */
     letter-spacing: 1px; /* Espaciado entre letras */
   }
@@ -404,7 +407,7 @@ body {
     display: flex; /* Activa flexbox */
     justify-content: center;
     align-items: center; /* Centra los elementos verticalmente */
-    background: #7344ae; /* Fondo blanco */
+    background: #05b8ff; /* Fondo blanco */
     padding: 2px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     width: 220px;
@@ -496,7 +499,6 @@ body {
 
   .product-individual-img:hover {
     transform: scale(1.04); /* Efecto de aumento al pasar el mouse */
-    filter: brightness(1.1);
   }
 
   .product-img {
@@ -532,7 +534,7 @@ body {
     font-style: normal;
     font-size: 30px;
     line-height: 1;
-    color: #9370DB; /* Color morado */
+    color: #50dcff; /* Color rojo */
   }
   
   .product-precio-dinero2 h4 {
@@ -541,7 +543,7 @@ body {
     font-style: normal;
     font-size: 30px;
     line-height: 1;
-    color: #DC143C; /* Color rojo */
+    color: #9370DB; /* Color morado */
   }
   
   .product-precio-dinero3 h4 {
@@ -564,7 +566,7 @@ body {
     height: 90vh; /* 90% de la altura de la pantalla */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     margin-top: 105px; /* Margen superior */
-    background-image: url('https://i.ibb.co/gMNCnF4W/medio.png'); /* Imagen de fondo */
+    background-image: url('https://i.ibb.co/n8jwz4YD/medio.png'); /* Imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -591,13 +593,12 @@ body {
       height: 80px;
       position: relative;
       overflow: hidden;
-      border: 1px solid rgb(192, 192, 192); /* Borde gris */
       border-radius: 45px; /* Bordes redondeados */
-      background: rgba(0, 0, 0, 0.514); /* Fondo semitransparente */
-      backdrop-filter: blur(30px); /* Aplica un efecto de desenfoque */
       transition: ease 0.2s;
       cursor: default;
-      transform: scale(1)
+      transform: scale(1);
+      background: rgba(0, 0, 0, 0.507); /* Fondo blanco semitransparente */
+      backdrop-filter: blur(2px); /* Aplica un efecto de desenfoque al fondo */
   }
 
   .medio-porcentaje:hover{
@@ -618,7 +619,7 @@ body {
   .medio-porcentaje-circulo {
       width: 80px;
       height: 80px;
-      background-color: #ff0011; 
+      background-color: #50dcff; 
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -630,14 +631,15 @@ body {
       font-style: normal;
       font-size: 30px;
       line-height: 1;
+      text-shadow: 0px 0px 4px #777777;
   }
 
   .medio-porcentaje:nth-child(2) .medio-porcentaje-circulo {
-      background-color: #7242b4;
+      background-color: #9370DB;
   }
 
   .medio-porcentaje:nth-child(3) .medio-porcentaje-circulo {
-      background-color: #ff7818;
+      background-color: #FF7F50;
   }
 
   .experiencia {
@@ -663,7 +665,7 @@ body {
   }
   
   .experiencia-texto-titulo h4 {
-    background: #6A42CF;
+    background: #05b8ff;
     display: inline-block;
     padding: 0px 30px;
 
@@ -754,11 +756,11 @@ body {
   }
   
   .experiencia-imagen-descripcion-cuadrado1 h4 strong {
-    color: #ff3e4a;
+    color: #9370DB;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 800; 
   }
-  
+
   .experiencia-imagen-descripcion-cuadrado1 h3 {
     color: gray;
     margin-top: -50px;
@@ -794,7 +796,7 @@ body {
   }
   
   .experiencia-imagen-descripcion-cuadrado2 h4 strong {
-    color: #51318d;
+    color: #FF7F50;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 1000; 
   }
