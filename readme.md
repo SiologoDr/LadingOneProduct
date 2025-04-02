@@ -1,9 +1,9 @@
-# RELAX - Producto Refrescante
+# EVEREST - Producto Libro
 
 ## Descripción
 Este proyecto es un trabajo efectuado por la empresa **DIGITAL BUHO S.A.C**, supervisado por el gerente **Enrique Baca Deyvis Daniel**, y desarrollado para el área de **Front-end**.
 
-La finalidad es crear una **landing page** para la venta de un producto refrescante llamado **RELAX**. La página web proporcionará información relevante del producto y permitirá a los clientes realizar compras o contactarse con la empresa.
+La finalidad es crear una **landing page** para la venta de un producto digital individual, en mi caso opte por el producto llamado **EVEREST**. La página web proporcionará información relevante del producto y permitirá a los clientes realizar compras o contactarse con la empresa.
 
 ### 📍 Link de la Página Web
 🔗 [Visitar en GitHub Pages](https://siologodr.github.io/LadingOneProduct/)
@@ -55,7 +55,7 @@ Relax/
 ## 📍 Imagenes del Proyecto
 No todas las imagenes han sido extraidas de Internet, sino que han sido desarrolladas por el autor
 
-![Evidencia](https://i.postimg.cc/T34QGwgR/01.png)
+![Evidencia](https://i.ibb.co/PzDHcfDd/image.png)
 
 ---
 
@@ -75,25 +75,31 @@ No todas las imagenes han sido extraidas de Internet, sino que han sido desarrol
 
 ## Inicio
 
-![Vista1](https://i.postimg.cc/V6yRrVKp/10.png)
+![Vista1](https://i.ibb.co/Mkx3KMzN/1.png)
 
 ---
 
-## Productos
+## Emociones
 
-![Vista2](https://i.postimg.cc/3w01wTF2/20.png)
+![Vista2](https://i.ibb.co/1Y1gNHbn/2.png)
 
 ---
 
-## Ofertas
+## Cotenido
 
-![Vista3](https://i.postimg.cc/ZRrLrxgR/30.png)
+![Vista3](https://i.ibb.co/7dmJwQ8z/3.png)
+
+---
+
+## Historia
+
+![Vista4](https://i.ibb.co/hx0DBcM5/4.png)
 
 ---
 
 ## Modal
 
-![Vista4](https://i.postimg.cc/DwZ5tsW-j/40.png)
+![Vista5](https://i.ibb.co/933HCtwg/5.png)
 
 ---
 
