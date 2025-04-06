@@ -813,3 +813,44 @@ body {
     line-height: 1;
     margin-left: 3px;
   }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+    font-size: 22px;
+    color: #333;
+    width: 1200px;
+    max-width: 1300px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    height: 20px;
+  }
+  
+  .footer-left a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .footer-left a:hover {
+    text-decoration: none;
+    color: #05b8ff;
+  }
+  
+  .footer-right {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right::before {
+    margin-right: 8px;
+    font-size: 16px;
+  }
